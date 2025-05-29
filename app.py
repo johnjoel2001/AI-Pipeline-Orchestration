@@ -46,20 +46,20 @@ def run_pipeline():
     <html>
     <head><title>Iris Classifier</title></head>
     <body style="font-family:sans-serif; padding:20px">
-    <h2 style="color:green;">✅ Iris Classifier Pipeline</h2>
-    <p><strong>⏱️ Time Taken:</strong> {elapsed} seconds</p>
-    <p><strong>🎯 Accuracy:</strong> {accuracy:.4f}</p>
+    <h2 style="color:green;"> Iris Classifier Pipeline</h2>
+    <p><strong> Time Taken:</strong> {elapsed} seconds</p>
+    <p><strong> Accuracy:</strong> {accuracy:.4f}</p>
 
-    <h3>📊 Classification Report</h3>
+    <h3>Classification Report</h3>
     {report_df.to_html()}
 
-    <h3>📉 Confusion Matrix</h3>
+    <h3>Confusion Matrix</h3>
     {cm_df.to_html()}
 
-    <h3>🔍 Sample Predictions</h3>
+    <h3>Sample Predictions</h3>
     {samples.to_html(index=False)}
 
-    <h3>🔧 Model Parameters</h3>
+    <h3>Model Parameters</h3>
     {param_df.to_html(index=False)}
 
     </body>
